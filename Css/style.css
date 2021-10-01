@@ -1,0 +1,424 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:#fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Yaldevi', sans-serif;
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Cantora One', sans-serif;
+    font-family: 'Kite One', sans-serif;
+    font-family: 'Rum Raisin', sans-serif;
+}
+/* <!-- =========================================================== --> */
+/* Start Header */
+.header{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 30px;
+    text-align: center;
+    color: var(--main-color);
+}
+@media(max-width:767px){
+    .header{
+        max-width: 100%;
+    }
+}
+.header img{
+    width: 170px;
+    float: left;
+}
+.header .container .login-btn{
+    width: 100px;
+    padding:8px 0;
+    outline: none !important;
+    border: 2px solid var(--main-color);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--main-color);
+    float: right;
+    /* font-family: Tomorrow; */
+    font-family: Yaldevi; 
+
+    /* background-image: linear-gradient(#2d557d , #9610fb); */
+    /* background-image: linear-gradient(#a3f1ed , #a6b6e0); */
+    cursor: pointer;
+}
+.header h1{
+    padding-top: 200px;
+    padding-bottom: 0;
+    font-family: Yaldevi; 
+    font-weight: 400;
+}
+.header p{
+    margin: 18px 0;
+    font-size: 14px;
+    color: rgb(207, 205, 205);
+    font-family: Aclonica;
+
+}
+.input-group{
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+    background: var(--main-color);
+    margin: auto;
+    padding: 2px;
+    margin-top: 60px;
+}
+.form-control{
+    border: 0 !important;
+    color: var(--main-color) !important;
+    padding: 0 25px !important ;
+    border-radius: 30px  !important;
+    box-shadow: none !important;
+}
+.input-group-text{
+    width: 100px;
+    background-image: linear-gradient(#00ff7e , #1f3d90);
+    border-radius: 30px !important;
+    border: 0 !important;
+    color: var(--main-color) !important;
+    box-shadow: none !important;
+}
+
+/* End Header */
+/* <!-- =========================================================== --> */
+
+/* <!-- =========================================================== --> */
+/* Start Featured */
+
+.features{
+    margin-top: 80px;
+}
+.features h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: Aclonica;
+}
+.card{
+    padding-bottom: 13px;
+
+
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.card:hover{
+    transform: scale(1.1);
+
+}
+.card-title{
+    /* font-family: Cantora; */
+    font-family: Yaldevi; 
+
+}
+.card-text{
+    font-family: Kite One;
+    font-size: 13px;
+}
+.card-group{
+    width: 1000px;
+    margin: 20px auto;
+    position: relative;
+}
+@media(max-width:767px){
+    .card-group{
+        width: 100%;
+    }
+}
+.card-group .num{
+    background: #ff5722;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--main-color);
+    padding: 10px;
+    left: 20px;
+    bottom: 175px;
+    font-weight: bold;
+    position: relative;
+
+}
+.rating{
+    position: relative;
+    right: -195px;
+    bottom: 222px;
+    padding: 3px;
+    float: right;
+    background: var(--main-color);
+    width: fit-content;
+}
+@media(max-width:767px){
+    .rating{
+        right: -235px;
+    }
+}
+.rating i{
+    font-size: 15px;
+    color: #ff5722;
+    
+}
+.card .icons{
+    margin-left: 13px;
+    margin-top: -74px;
+}
+.card .icons i{
+    color: #ff5722;
+}
+.card span{
+    /* font-family: Yaldevi;  */
+    font-family: Cantora;
+
+
+}
+/* End Featured */
+/* <!-- =========================================================== --> */
+
+
+
+/* <!-- =========================================================== --> */
+/* Start Gallery */
+
+.gallery{
+    margin-top: 80px;
+    padding: 100px 0 ;
+    background: #efefef;
+}
+.gallery h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: Aclonica;
+
+}
+.gallery-box img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.gallery-box{
+    position: relative;
+}
+.gallery-box img:hover{
+    transform: scale(1.1);
+    transform: rotate(10deg);
+}
+.gallery-box h4{
+    color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    font-weight: 600;
+    text-shadow: -2px 2px 2px #000 ;
+    font-size: 22px;
+    font-family: Yaldevi;
+    
+}
+
+/* End Gallery */
+/* <!-- =========================================================== --> */
+
+
+/* <!-- =========================================================== --> */
+/* Start Banner */
+.banner{
+    height: 100vh;
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 15%;
+}
+.banner-hieghlights{
+    padding: 70px 0;
+    background: rgba(0,0,0,0.7);
+    color: var(--main-color);
+    text-align: center;
+}
+.banner .col-md-8 p{
+    font-size: 14px;
+    font-family: Yaldevi;
+
+}
+.banner .col-md-8 h2{
+    font-size: 60px;
+    font-family: Rum Raisin;
+}
+.banner .booking-btn{
+    width: 100px;
+    padding:8px 0;
+    outline: none !important;
+    border: 2px solid var(--main-color);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--main-color);
+    float: right;
+    position: absolute;
+    right: 200px;
+    /* background-image: linear-gradient(#00ff7e , #1f3d90); */
+    background-image: linear-gradient(#508fce , #c17af8);
+    /* font-family: Tomorrow; */
+    font-family: Yaldevi; 
+    position: relative;
+}
+
+@media(max-width:767px){
+    .booking-btn{
+        margin-top: 17px;
+        margin-right: -75px;
+    }
+}
+
+/* End Banner */
+/* <!-- =========================================================== --> */
+
+
+
+/* <!-- =========================================================== --> */
+/* Start User Review */
+.user-review{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.user-review h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: Aclonica;
+
+}
+.user-box{
+    padding: 10px 10px;
+}
+.user{
+    text-align: center;
+    padding: 50px 20px 10px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.user:hover{
+    transform: scale(.9);
+}
+.user p{
+    font-family: Yaldevi;
+
+}
+.user-box img{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: -30px 0 20px 40%;   
+        cursor: pointer;
+        transition: 2s;
+}
+.user-box img:hover{
+    transform: scale(2);
+    /* transform: rotate(360deg); */
+}
+
+.user h6{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Cantora;
+}
+.user h3{
+    font-family: Yaldevi;
+}
+.user::after{
+    content: '<...>';
+    display: block;
+    position: relative;
+    font-size: 37px;
+    color: #6495ed;
+    top: -215px; 
+}
+/* End User Review */
+/* <!-- =========================================================== --> */
+
+
+/* <!-- =========================================================== --> */
+/* Start Footer */
+.footer{
+    margin-top: 100px;
+    padding: 100px;
+    background-image: linear-gradient(#2d557d , #9610fb);
+    color: var(--main-color);
+}
+.part-one .logo-footer{
+    width: 200px;
+}
+.part-one p{
+    font-size: 13px;
+    margin-top: 17px;
+    font-family: Kite One;
+}
+.part-one{
+    margin-bottom: 10px;
+}
+
+.part-two h2{
+    font-size: 32px;
+    font-weight: normal;
+    font-family: "Rum Raisin";
+}
+.part-two p {
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Kite One;
+}
+.part-two{
+    margin-bottom: 10px;
+}
+.part-three h2{
+    font-weight: normal;
+    font-family: "Rum Raisin";
+}
+.part-three i{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.part-three i span{
+    font-family: Kite One;
+    font-size: 15px;
+}
+.part-three{
+    margin-bottom: 10px;
+}
+.part-four i{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.part-four i span{
+    font-family: Kite One;
+    font-size: 15px;
+}
+.part-four h2{
+    font-weight: normal;
+    font-family: "Rum Raisin";
+}
+.part-four{
+    margin-bottom: 10px;
+}
+
+/* End Footer */
+/* <!-- =========================================================== --> */
